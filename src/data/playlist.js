@@ -7,6 +7,20 @@ import mehendiImg from '../assets/images/mehandi.jpg'
 import sangeetImg from '../assets/images/sangeet.jpg'
 import weddingImg from '../assets/images/wedding.jpg'
 
+// Newly added authentic couple photos of Shubham & Kajal
+import coupleFloralMandap from '../assets/images/couple/couple-floral-mandap.jpeg'
+import coupleRooftopGoldenHour from '../assets/images/couple/couple-rooftop-golden-hour.jpeg'
+import coupleLaughingOutdoors from '../assets/images/couple/couple-laughing-outdoors.jpeg'
+import coupleSelfieMoments from '../assets/images/couple/couple-selfie-moments.jpeg'
+import coupleTraditionalEthnic from '../assets/images/couple/couple-traditional-ethnic.jpeg'
+
+// Event illustrations & user added ceremony photos
+import ganeshSthapnaImg from '../assets/images/events/ganesh-sthapna.avif'
+import haldiEventImg from '../assets/images/events/haldi.jpg'
+import mameruEventImg from '../assets/images/events/mameru.jpeg'
+import garbaEventImg from '../assets/images/events/garba.avif'
+import familyPhotoImg from '../assets/images/family-photo.jpeg'
+
 import dinShagnaDa from '../assets/songs/din_shagna_da.mp3'
 import song1 from '../assets/songs/song1.mp3'
 import song2 from '../assets/songs/song2.mp3'
@@ -19,150 +33,313 @@ import song3 from '../assets/songs/song3.mp3'
 
 export const WEDDING_CONFIG = {
   // Couple Information
-  bride: 'Aanya',
-  groom: 'Arjun',
-  displayOrder: 'bride-groom', // Options: 'bride-groom' or 'groom-bride'
-  initials: 'A ♥ A', // Auto-derived if left default; can be set e.g. 'P ♥ R'
+  groom: 'Shubham',
+  groomFull: 'Chi. Shubham',
+  bride: 'Kajal',
+  brideFull: 'Chi. Kajal',
+  displayOrder: 'groom-bride',
+  initials: 'S ♥ K',
+  coupleTitle: 'Shubham & Kajal',
 
-  // Branding & Subtitles
-  year: '2027',
-  tagline: 'OUR FOREVER ERA',
-  playlistName: 'The Wedding Playlist',
-  subheading: 'The Celebration Lineup',
+  // Divine Invocations & Auspicious Titles from Card
+  invocations: [
+    'Shree Ganeshay Namah',
+    'Shree Vishwakarma Namah',
+    'Shree Chamunda Matay Namah',
+  ],
+  invocationsGu: '|| શ્રી ગણેશાય નમઃ || શ્રી વિશ્વકર્માય નમઃ || શ્રી ચામુંડા માતાય નમઃ ||',
+  ceremonyTitle: 'MANGAL PARINAY',
+  ceremonySub: 'HOLY MATRIMONY',
 
-  // Wedding Location & Socials
-  weddingCityState: 'Jaipur, Rajasthan, India',
-  hashtag: '#AanyaAndArjunForever',
+  // Parents and Residence
+  divineBlessing:
+    'With the boundless blessings of Shree Chamunda Mataji and Shree Vishwakarma Dada',
+  
+  // Groom Side (Vadodara)
+  groomResidence: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara, Gujarat',
+  groomParents: 'Mrs. Jyotiben & Shri Shaileshbhai Ratilal Gajjar (Dunavadiya)',
+  groomFamilyTitle: 'Dunavadiya Parivar',
+  
+  // Bride Side (Ahmedabad)
+  brideResidence: 'Ahmedabad, Gujarat',
+  brideParents: 'Mrs. Komalben & Shri Pradipbhai Kantibhai Mistry (Mahidhariya)',
+  brideFamilyTitle: 'Mistry (Mahidhariya) Parivar',
 
-  // Invitation Hosts & Cultural Details
-  invitationHosts: 'Together with our families',
-  brideParents: 'Sunita & Rajesh Sharma', // Optional: e.g. 'Mr. & Mrs. Sharma' (omitted if empty)
-  groomParents: 'Meera & Vikram Mehta', // Optional: e.g. 'Mr. & Mrs. Verma' (omitted if empty)
-  language: 'English',
-  culturalTraditions: 'Culturally neutral contemporary Indian wedding',
-
-  // Landing Screen Story / Blessing
-  story:
-    'Together with our families, we invite you to celebrate the beginning of our forever. Two hearts. One playlist. A lifetime on repeat. 🤍',
-
-  // Cover image for the landing card
-  landingCoverUrl: landingCoverImg,
-
-  // Main Wedding Date (Used for Live Countdown & Calendar)
-  // Display date format: unambiguous e.g. "14 February 2027 · 6:00 PM IST"
-  mainWeddingDate: '14 February 2027 · 6:00 PM IST',
-
-  // ISO 8601 date string in Asia/Kolkata timezone (+05:30) for accurate countdown
-  // Set to e.g. '2027-02-14T18:00:00+05:30' once confirmed. Leave empty if pending.
-  isoWeddingDate: '2027-02-14T18:00:00+05:30',
+  // Traditional Calendar Details
+  hinduDate: 'Vikram Samvat 2083, Kartak Sud 13, Sunday',
+  mainWeddingDate: 'Sunday, 22 November 2026 · 11:00 AM IST',
+  isoWeddingDate: '2026-11-22T11:00:00+05:30',
   timezone: 'Asia/Kolkata',
 
-  // Google Calendar Event Details ("Mark Your Calendar" button)
+  // Venue from Card
+  venueName: 'Vishwakarma Baug',
+  venueLocation: 'Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat',
+  venueFull: 'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat',
+  mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
+
+  // Socials & Hashtag
+  hashtag: '#ShubhamWedsKajal',
+  year: '2026',
+
+  // Invitation Message (Translated faithfully into English from the Gujarati card)
+  invitationNote:
+    'On this auspicious occasion, you are cordially invited along with your family to grace the celebrations, bless the newlywed couple, and enhance the beauty of this joyous milestone.',
+
+  // Family Sections from Card
+  // 1. Darshanabhilashi (Well-Wishers) - Hunavadiya Parivar
+  wellWishers: [
+    'Shri Ratilal Kantilal Dunavadiya',
+    'A.Sau. Kantaben Ratilal Dunavadiya',
+    'Shri Narendrabhai Ratilal Dunavadiya',
+    'Chi. Disha Shaileshbhai Dunavadiya',
+    'Shri Keyur Narendrabhai Dunavadiya',
+    'Chi. Riya Narendrabhai Dunavadiya',
+  ],
+  familyCollective: 'Entire Dunavadiya Family',
+
+  // 2. Mameru Shobhavshe (Maternal Visavadiya Parivar)
+  maternalFamily: [
+    'Late Laljibhai Nagjibhai Visavadiya',
+    'Late Kusumben Laljibhai Visavadiya',
+    'G.Sau. Vanitaben Laljibhai Visavadiya',
+    'G.Sau. Ashaben Laljibhai Solgama',
+    'A.Sau. Ashwinaben & Shri Vasudev Kaloliya',
+    'A.Sau. Kirtiben & Shri Jagdishkumar Panchasara',
+    'A.Sau. Chhayaben & Shri Hasmukhbhai Bhaderiya',
+    'Late Alpaben & Shri Bhagwanjibhai Adiyecha',
+    'A.Sau. Manishaben & Shri Hareshkumar Panchasara',
+  ],
+  maternalCollective: 'Entire Visavadiya Family',
+
+  // 3. Sisters (Baheno)
+  sisters: [
+    'Late Bhavnaben Dineshkumar Ughroja',
+    'A.Sau. Nenaben Dineshkumar Ughroja',
+    'A.Sau. Gayatriben Niteshkumar Sonigara',
+  ],
+
+  // 4. Nieces & Nephews (Bhanej)
+  niecesNephews: [
+    'Nikunj Dineshkumar Ughroja',
+    'Savan Dineshkumar Ughroja',
+    'Yash Niteshkumar Sonigara',
+    'Isha Niteshkumar Sonigara',
+  ],
+
+  // 5. Tahuko (Special Rhyme from Disha & Sagar)
+  tahuko: {
+    gujarati:
+      'સાચી દિશા અને સાગરની ગહેરાઈ જેવી લાગણીઓ સાથે મારા ભાઈ શુભમના લગ્નમાં વહેલા વહેલા જરૂરથી પધારજો..... દિશા, સાગર',
+    english:
+      'With true guidance ("Disha") and affection as deep as the ocean ("Sagar"), please come early and be part of our dear brother Shubham\'s wedding celebrations! — Disha, Sagar',
+  },
+
+  // Cover image for the postcard & hero
+  landingCoverUrl: coupleFloralMandap,
+
+  // Google Calendar Event Details
   calendar: {
-    eventTitle: 'Aanya weds Arjun — Wedding Ceremony 💍',
+    eventTitle: 'Shubham weds Kajal — Mangal Parinay & Hasta Melap 💍',
     description:
-      'Together with our families, we invite you to celebrate the wedding ceremony of Aanya & Arjun! Dress Code: Traditional Indian Attire.',
-    location: 'Gulab Bagh, The Gulmohar Haveli, Jaipur, Rajasthan, India',
-    durationHours: 4,
+      'Wedding of Shubham & Kajal. With blessings of Shree Chamunda Mataji & Shree Vishwakarma Dada. Hasta Melap at 11:00 AM on Sunday, 22 November 2026.',
+    location:
+      'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat',
+    durationHours: 6,
   },
 
   // RSVP & WhatsApp Configuration
   rsvp: {
-    deadline: '25 January 2027',
-    contactName: 'Riya Sharma — Family Coordinator',
-    contactPhone: '',
-    whatsappNumber: '', // Host WhatsApp phone number (+91 format)
-    rsvpLink: '',
-    title: "You're on the Guest List!",
-    subtitle: 'Will you be celebrating live with us?',
-    mealOptions: ['Vegetarian', 'Jain', 'Non-Vegetarian'],
-    confirmationTitle: 'Your RSVP Selection 🎉',
-    confirmationYes: "We can't wait to see you on the dance floor!",
-    confirmationNo: "We'll miss you dearly — sending love and warm blessings.",
+    deadline: '15 November 2026',
+    contactName: 'Gajjar & Dunavadiya Family Coordinator',
+    contactPhone: '+91 98765 43210',
+    whatsappNumber: '+919876543210',
+    title: 'Wedding RSVP',
+    subtitle: 'Will you join us in our celebrations?',
+    mealOptions: ['Pure Vegetarian 🌿', 'Jain Food 🕊️', 'Swruchi Bhojan 🍽️'],
+    confirmationTitle: 'RSVP Received with Gratitude! 💐',
+    confirmationYes: "We can't wait to welcome you and celebrate together in Ahmedabad!",
+    confirmationNo: 'We will miss your presence — your blessings mean the world to us.',
   },
 
-  // Optional Travel & Accommodation (leave empty to omit from UI)
-  accommodation: 'Stay arrangements and booking details will be shared with invited guests.',
-  travel: 'Please plan to arrive in Jaipur by the morning of 12 February 2027 to join all the celebrations. Transfer details will be shared closer to the wedding.',
+  // Family Photo
+  familyPhoto: familyPhotoImg,
+
+  // Gallery Photos — Real photos of Shubham & Kajal
+  photos: [
+    {
+      id: 'photo-family',
+      url: familyPhotoImg,
+      title: 'Our Loving Family',
+      caption: 'Surrounded by the infinite love and blessings of our family at home.',
+      tag: 'Family Blessings',
+    },
+    {
+      id: 'photo-1',
+      url: coupleFloralMandap,
+      title: 'Under the Floral Mandap',
+      caption: 'Shubham & Kajal adorned in auspicious royal attire, ready for their forever.',
+      tag: 'Royal Couple',
+    },
+    {
+      id: 'photo-2',
+      url: coupleRooftopGoldenHour,
+      title: 'Golden Hour Romance',
+      caption: 'Two souls, one sacred promise under the sunset skies.',
+      tag: 'Sacred Bond',
+    },
+    {
+      id: 'photo-3',
+      url: coupleTraditionalEthnic,
+      title: 'Traditional Elegance',
+      caption: 'Dressed in classic silk and auspicious bridal henna, embracing our Gujarati roots.',
+      tag: 'Ethnic Look',
+    },
+    {
+      id: 'photo-4',
+      url: coupleLaughingOutdoors,
+      title: 'Joyful Laughter & Smiles',
+      caption: 'Candid smiles and sweet shared giggles in nature.',
+      tag: 'Candid Joy',
+    },
+    {
+      id: 'photo-5',
+      url: coupleSelfieMoments,
+      title: 'Everyday Happiness',
+      caption: 'Two hearts beating as one — simple moments that become lifelong treasures.',
+      tag: 'Sweet Moments',
+    },
+  ],
+
+  accommodation:
+    'Family stay arrangements are coordinated at Ahmedabad for our outstation guests.',
+  travel:
+    'Jasodanagar is easily accessible from Ahmedabad Railway Station (Kalupur) and Sardar Vallabhbhai Patel International Airport.',
 }
 
 // =========================================================================
-//  WEDDING_PLAYLIST — EVENTS / CEREMONIES TIMELINE
-//  Chronological Indian wedding events. Each item is a "track" in the playlist.
+//  WEDDING_PLAYLIST — EXACT CEREMONIES SCHEDULE (MANGALIK PRASANGO)
+//  Extracted directly from Page 2 of the physical invitation card:
+//  Saturday 21-11-2026 & Sunday 22-11-2026
 // =========================================================================
 
 export const WEDDING_PLAYLIST = [
+  // --- SATURDAY, 21 NOVEMBER 2026: PRE-WEDDING AT VADODARA RESIDENCE ---
   {
-    id: 'mehendi',
-    title: 'Mehendi',
-    artist: 'Aanya & Arjun',
-    venue: 'The Courtyard, The Gulmohar Haveli',
-    address: 'The Gulmohar Haveli, 18 Gulmohar Lane, Jaipur, Rajasthan, India',
-    mapsUrl: '',
-    date: '12 February 2027 · 3:00 PM IST',
-    time: '3:00 PM IST',
-    dressCode: 'Colourful Ethnic Wear',
-    description: 'An afternoon of henna, music, and happy beginnings.',
+    id: 'ganesh-sthapna',
+    title: 'Ganesh Sthapana & Mandap Muhurat',
+    gujaratiTitle: 'ગણેશ સ્થાપના / મંડપ મુહૂર્ત',
+    dayNumber: 'Day 1',
+    date: 'Saturday, 21 November 2026',
+    dateShort: '21 Nov 2026',
+    time: '8:00 AM IST',
+    timeGujarati: 'સવારે ૮:૦૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 12',
+    venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+    city: 'Vadodara',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    dressCode: 'Traditional Yellow / Auspicious Ethnic',
+    icon: '🏛️',
+    description:
+      'Invocations of Lord Ganesha and sanctification of the wedding mandap to begin the sacred rites with divine harmony.',
     lyrics:
-      'An afternoon of henna, music, and happy beginnings.\nDress Code: Colourful Ethnic Wear',
-    coverUrl: mehendiImg,
-    audioUrl: song1,
-    accent: '#1DB954', // Spotify & Mehendi green
+      'Ganesh Sthapana & Mandap Muhurat · Saturday, 21 November 2026 · 8:00 AM IST',
+    coverUrl: ganeshSthapnaImg,
+    audioUrl: dinShagnaDa,
+    accent: '#EAB308',
   },
   {
     id: 'haldi',
-    title: 'Haldi',
-    artist: 'Aanya & Arjun',
-    venue: 'Marigold Lawn, The Gulmohar Haveli',
-    address: 'The Gulmohar Haveli, 18 Gulmohar Lane, Jaipur, Rajasthan, India',
-    mapsUrl: '',
-    date: '13 February 2027 · 10:00 AM IST',
+    title: 'Haldi Ceremony',
+    gujaratiTitle: 'પીઠી / હળદર વિધિ',
+    dayNumber: 'Day 1',
+    date: 'Saturday, 21 November 2026',
+    dateShort: '21 Nov 2026',
     time: '10:00 AM IST',
-    dressCode: 'Shades of Yellow',
-    description: 'A little haldi, a lot of laughter, and love all around.',
-    lyrics:
-      'A little haldi, a lot of laughter, and love all around.\nDress Code: Shades of Yellow',
-    coverUrl: haldiImg,
-    audioUrl: song2,
-    accent: '#EAB308', // Turmeric Haldi gold
-  },
-  {
-    id: 'sangeet',
-    title: 'Sangeet',
-    artist: 'Aanya & Arjun',
-    venue: 'Sheesh Mahal Ballroom, The Gulmohar Haveli',
-    address: 'The Gulmohar Haveli, 18 Gulmohar Lane, Jaipur, Rajasthan, India',
-    mapsUrl: '',
-    date: '13 February 2027 · 7:00 PM IST',
-    time: '7:00 PM IST',
-    dressCode: 'Festive Indian / Indo-Western',
-    description: 'Our favourite people, their best moves, and a night to remember.',
-    lyrics:
-      'Our favourite people, their best moves, and a night to remember.\nDress Code: Festive Indian / Indo-Western',
-    coverUrl: sangeetImg,
-    audioUrl: song3,
-    accent: '#A855F7', // Festive Sangeet royal violet
-  },
-  {
-    id: 'wedding-ceremony',
-    title: 'Wedding Ceremony',
-    artist: 'Aanya & Arjun',
-    venue: 'Gulab Bagh, The Gulmohar Haveli',
-    address: 'The Gulmohar Haveli, 18 Gulmohar Lane, Jaipur, Rajasthan, India',
-    mapsUrl: '',
-    date: '14 February 2027 · 6:00 PM IST',
-    time: '6:00 PM IST',
-    arrival: '4:30 PM IST',
-    baraat: '5:00 PM IST',
-    ceremony: '6:00 PM IST',
-    dressCode: 'Traditional Indian Attire',
+    timeGujarati: 'સવારે ૧૦:૦૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 12',
+    venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+    city: 'Vadodara',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    dressCode: 'Sunshine Yellow & Floral Accents',
+    icon: '🌼',
     description:
-      'Join us as we begin our next chapter, surrounded by your love and blessings.',
+      'Splashes of golden turmeric, playful laughter, and heartfelt blessings for the radiant bride and groom.',
     lyrics:
-      'Join us as we begin our next chapter, surrounded by your love and blessings.\nDress Code: Traditional Indian Attire',
+      'Haldi Ceremony · Saturday, 21 November 2026 · 10:00 AM IST',
+    coverUrl: haldiEventImg,
+    audioUrl: song1,
+    accent: '#F59E0B',
+  },
+  {
+    id: 'mameru',
+    title: 'Mameru Ceremony (Mosal Welcome)',
+    gujaratiTitle: 'મામેરું',
+    dayNumber: 'Day 1',
+    date: 'Saturday, 21 November 2026',
+    dateShort: '21 Nov 2026',
+    time: '2:30 PM IST',
+    timeGujarati: 'બપોરે ૨:૩૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 12',
+    venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+    city: 'Vadodara',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    dressCode: 'Traditional Gujarati Ethnic Wear',
+    icon: '🎁',
+    description:
+      'Affectionate arrival of the maternal family (Maternal Visavadiya Parivar) bearing auspicious gifts, traditional attire, and cherished blessings.',
+    lyrics:
+      'Mameru (Mosal Ceremony) · Saturday, 21 November 2026 · 2:30 PM IST',
+    coverUrl: mameruEventImg,
+    audioUrl: song2,
+    accent: '#BE185D',
+  },
+  {
+    id: 'garba',
+    title: 'Garba Night (Raas Ni Ramzat)',
+    gujaratiTitle: 'રાસ ની રમઝટ',
+    dayNumber: 'Day 1',
+    date: 'Saturday, 21 November 2026',
+    dateShort: '21 Nov 2026',
+    time: '8:00 PM IST',
+    timeGujarati: 'રાત્રે ૮:૦૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 12',
+    venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+    city: 'Vadodara',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    dressCode: 'Chaniya Choli, Kediya & Indo-Western',
+    icon: '🪩',
+    description:
+      'A high-energy night of rhythmic Dandiya Raas, lively Gujarati Garba beats, and singing together until midnight.',
+    lyrics:
+      'Raas Ni Ramzat (Garba Night) · Saturday, 21 November 2026 · 8:00 PM IST',
+    coverUrl: garbaEventImg,
+    audioUrl: song3,
+    accent: '#A855F7',
+  },
+
+  // --- SUNDAY, 22 NOVEMBER 2026: MAIN WEDDING AT AHMEDABAD VENUE ---
+  {
+    id: 'hasta-melap',
+    title: 'Hasta Melap & Sacred Pheras',
+    gujaratiTitle: 'હસ્ત મેળાપ',
+    dayNumber: 'Day 2',
+    date: 'Sunday, 22 November 2026',
+    dateShort: '22 Nov 2026',
+    time: '11:00 AM IST',
+    timeGujarati: 'સવારે ૧૧:૦૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 13',
+    venue: 'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat 382445',
+    city: 'Ahmedabad',
+    mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
+    dressCode: 'Royal Gujarati Wedding Attire',
+    icon: '💍',
+    description:
+      'The sacred union of hands (Hasta Melap), Kanyadaan, and Saat Pheras around the holy fire uniting Shubham & Kajal as husband and wife.',
+    lyrics:
+      'Hasta Melap & Wedding Ceremony · Sunday, 22 November 2026 · 11:00 AM IST',
     coverUrl: weddingImg,
     audioUrl: dinShagnaDa,
-    accent: '#E11D48', // Royal Wedding crimson
+    accent: '#E11D48',
   },
 ]
 
