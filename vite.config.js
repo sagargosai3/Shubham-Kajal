@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     host: true, // expose on LAN so you can test on a real phone
     port: 5173,
-    allowedHosts: ['shubham-kajal.onrender.com']
+    allowedHosts: ['https://shubham-kajal.vercel.app']
   },
 })

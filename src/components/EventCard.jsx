@@ -16,13 +16,10 @@ export default function EventCard({
   time,
   illustrationUrl,
   quote,
-  dressCodeColors = [],
-  dressCodeText,
   venue,
   mapsUrl,
   theme,
   objectPosition,
-  cityTag,
 }) {
   const dateLine = `${weekday} | ${day} | ${month} ${year}`
 
@@ -75,40 +72,14 @@ export default function EventCard({
           "{quote}"
         </p>
 
-        {/* DRESS CODE Section */}
-        <div className="pt-1 text-center space-y-2">
-          <span className="text-[10px] font-bold tracking-[0.25em] text-[#8E2A2A] uppercase block">
-            DRESS CODE
-          </span>
-
-          {/* Colored dots + Color names */}
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {dressCodeColors.map((color, idx) => (
-              <div key={idx} className="flex items-center gap-1.5 text-[11px] text-[#3A2A2A]/85">
-                <span
-                  className="w-3 h-3 rounded-full border border-black/15 shadow-sm inline-block shrink-0"
-                  style={{ backgroundColor: color.hex }}
-                />
-                <span className="font-medium">{color.name}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Dress style in small caps */}
-          <p className="text-[11px] font-semibold tracking-[0.18em] text-[#C9A24B] uppercase">
-            {dressCodeText}
-          </p>
-        </div>
-
         {/* Thin Divider */}
         <div className="h-[1px] w-full bg-[#C9A24B]/25" />
 
-        {/* Venue Name with City Badge */}
+        {/* Venue Name */}
         <div className="text-center space-y-1">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 border border-[#C9A24B]/40 text-[10px] font-bold tracking-wider text-[#8E2A2A] uppercase">
-            <MapPin className="w-3 h-3 text-[#C9A24B] shrink-0" />
-            <span>{cityTag ? `${cityTag} Ceremony Venue` : 'Ceremony Venue'}</span>
-          </div>
+          <span className="text-[10px] font-semibold tracking-widest text-[#3A2A2A]/60 uppercase block">
+            VENUE
+          </span>
           <p className="text-xs sm:text-sm font-semibold text-[#8E2A2A] font-sans mt-0.5 leading-snug">
             {venue}
           </p>

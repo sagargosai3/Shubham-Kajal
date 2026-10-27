@@ -13,11 +13,13 @@ import coupleRooftopGoldenHour from '../assets/images/couple/couple-rooftop-gold
 import coupleLaughingOutdoors from '../assets/images/couple/couple-laughing-outdoors.jpeg'
 import coupleSelfieMoments from '../assets/images/couple/couple-selfie-moments.jpeg'
 import coupleTraditionalEthnic from '../assets/images/couple/couple-traditional-ethnic.jpeg'
+import coupleFairytalePink from '../assets/images/couple/couple-fairytale-pink.jpeg'
 
 // Event illustrations & user added ceremony photos
 import ganeshSthapnaImg from '../assets/images/events/ganesh-sthapna.avif'
-import haldiEventImg from '../assets/images/events/haldi.jpg'
+import mandapMuhuratImg from '../assets/images/events/mandap-muhurat.jpeg'
 import mameruEventImg from '../assets/images/events/mameru.jpeg'
+import dinnerImg from '../assets/images/events/dinner.jpg'
 import garbaEventImg from '../assets/images/events/garba.avif'
 import familyPhotoImg from '../assets/images/family-photo.jpeg'
 
@@ -66,16 +68,16 @@ export const WEDDING_CONFIG = {
   brideFamilyTitle: 'Mistry (Mahidhariya) Parivar',
 
   // Traditional Calendar Details
-  hinduDate: 'Vikram Samvat 2083, Kartak Sud 13, Sunday',
-  mainWeddingDate: 'Sunday, 22 November 2026 · 11:00 AM IST',
-  isoWeddingDate: '2026-11-22T11:00:00+05:30',
+  hinduDate: 'Vikram Samvat 2083, Kartak Sud 12, Saturday',
+  mainWeddingDate: 'Saturday, 21 November 2026 · 8:00 AM IST',
+  isoWeddingDate: '2026-11-21T08:00:00+05:30',
   timezone: 'Asia/Kolkata',
 
-  // Venue from Card
-  venueName: 'Vishwakarma Baug',
-  venueLocation: 'Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat',
-  venueFull: 'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat',
-  mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
+  // Venue from Card (Vadodara)
+  venueName: 'Shreeji Darshan Bungalows',
+  venueLocation: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara, Gujarat',
+  venueFull: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara, Gujarat',
+  mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
 
   // Socials & Hashtag
   hashtag: '#ShubhamWedsKajal',
@@ -189,10 +191,10 @@ export const WEDDING_CONFIG = {
     },
     {
       id: 'photo-3',
-      url: coupleTraditionalEthnic,
-      title: 'Traditional Elegance',
-      caption: 'Dressed in classic silk and auspicious bridal henna, embracing our Gujarati roots.',
-      tag: 'Ethnic Look',
+      url: coupleFairytalePink,
+      title: 'Traditional Grace & Fairytale Romance',
+      caption: 'Wrapped in festive hues, stepping together into our new forever.',
+      tag: 'Fairytale Look',
     },
     {
       id: 'photo-4',
@@ -223,11 +225,11 @@ export const WEDDING_CONFIG = {
 // =========================================================================
 
 export const WEDDING_PLAYLIST = [
-  // --- SATURDAY, 21 NOVEMBER 2026: PRE-WEDDING AT VADODARA RESIDENCE ---
+  // --- SATURDAY, 21 NOVEMBER 2026: VADODARA RESIDENCE ---
   {
     id: 'ganesh-sthapna',
-    title: 'Ganesh Sthapana & Mandap Muhurat',
-    gujaratiTitle: 'ગણેશ સ્થાપના / મંડપ મુહૂર્ત',
+    title: 'Ganesh Sthapna',
+    gujaratiTitle: 'ગણેશ સ્થાપના',
     dayNumber: 'Day 1',
     date: 'Saturday, 21 November 2026',
     dateShort: '21 Nov 2026',
@@ -237,42 +239,40 @@ export const WEDDING_PLAYLIST = [
     venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
     city: 'Vadodara',
     mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
-    dressCode: 'Traditional Yellow / Auspicious Ethnic',
     icon: '🏛️',
     description:
-      'Invocations of Lord Ganesha and sanctification of the wedding mandap to begin the sacred rites with divine harmony.',
+      'Invocations of Lord Ganesha to begin the auspicious wedding rites with divine blessings and harmony.',
     lyrics:
-      'Ganesh Sthapana & Mandap Muhurat · Saturday, 21 November 2026 · 8:00 AM IST',
+      'Ganesh Sthapna · Saturday, 21 November 2026 · 8:00 AM IST',
     coverUrl: ganeshSthapnaImg,
     audioUrl: dinShagnaDa,
     accent: '#EAB308',
   },
   {
-    id: 'haldi',
-    title: 'Haldi Ceremony',
-    gujaratiTitle: 'પીઠી / હળદર વિધિ',
+    id: 'mandap-muhurat',
+    title: 'Mandap Muhurat',
+    gujaratiTitle: 'મંડપ મુહૂર્ત',
     dayNumber: 'Day 1',
     date: 'Saturday, 21 November 2026',
     dateShort: '21 Nov 2026',
-    time: '10:00 AM IST',
-    timeGujarati: 'સવારે ૧૦:૦૦ કલાકે',
+    time: '8:00 AM IST',
+    timeGujarati: 'સવારે ૮:૦૦ કલાકે',
     hinduDate: 'Samvat 2083 Kartak Sud 12',
     venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
     city: 'Vadodara',
     mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
-    dressCode: 'Sunshine Yellow & Floral Accents',
-    icon: '🌼',
+    icon: '🌸',
     description:
-      'Splashes of golden turmeric, playful laughter, and heartfelt blessings for the radiant bride and groom.',
+      'Sanctification of the sacred wedding mandap to invite divine blessings, harmony, and joy.',
     lyrics:
-      'Haldi Ceremony · Saturday, 21 November 2026 · 10:00 AM IST',
-    coverUrl: haldiEventImg,
+      'Mandap Muhurat · Saturday, 21 November 2026 · 8:00 AM IST',
+    coverUrl: mandapMuhuratImg,
     audioUrl: song1,
-    accent: '#F59E0B',
+    accent: '#B45309',
   },
   {
     id: 'mameru',
-    title: 'Mameru Ceremony (Mosal Welcome)',
+    title: 'Mameru',
     gujaratiTitle: 'મામેરું',
     dayNumber: 'Day 1',
     date: 'Saturday, 21 November 2026',
@@ -283,19 +283,40 @@ export const WEDDING_PLAYLIST = [
     venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
     city: 'Vadodara',
     mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
-    dressCode: 'Traditional Gujarati Ethnic Wear',
     icon: '🎁',
     description:
-      'Affectionate arrival of the maternal family (Maternal Visavadiya Parivar) bearing auspicious gifts, traditional attire, and cherished blessings.',
+      'Welcoming our beloved maternal family (Visavadiya Parivar) bearing auspicious gifts, traditional attire, and cherished blessings.',
     lyrics:
-      'Mameru (Mosal Ceremony) · Saturday, 21 November 2026 · 2:30 PM IST',
+      'Mameru Ceremony · Saturday, 21 November 2026 · 2:30 PM IST',
     coverUrl: mameruEventImg,
     audioUrl: song2,
     accent: '#BE185D',
   },
   {
+    id: 'dinner',
+    title: 'Dinner',
+    gujaratiTitle: 'રાત્રિ ભોજન',
+    dayNumber: 'Day 1',
+    date: 'Saturday, 21 November 2026',
+    dateShort: '21 Nov 2026',
+    time: '7:00 PM IST',
+    timeGujarati: 'સાંજે ૭:૦૦ કલાકે',
+    hinduDate: 'Samvat 2083 Kartak Sud 12',
+    venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+    city: 'Vadodara',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    icon: '🍽️',
+    description:
+      'An exquisite evening banquet with authentic flavors, laughter, and warm celebrations under the lights.',
+    lyrics:
+      'Wedding Dinner Banquet · Saturday, 21 November 2026 · 7:00 PM IST',
+    coverUrl: dinnerImg,
+    audioUrl: dinShagnaDa,
+    accent: '#2F4F0B',
+  },
+  {
     id: 'garba',
-    title: 'Garba Night (Raas Ni Ramzat)',
+    title: 'Garba',
     gujaratiTitle: 'રાસ ની રમઝટ',
     dayNumber: 'Day 1',
     date: 'Saturday, 21 November 2026',
@@ -306,40 +327,15 @@ export const WEDDING_PLAYLIST = [
     venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
     city: 'Vadodara',
     mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
-    dressCode: 'Chaniya Choli, Kediya & Indo-Western',
     icon: '🪩',
     description:
-      'A high-energy night of rhythmic Dandiya Raas, lively Gujarati Garba beats, and singing together until midnight.',
+      'Raas Ni Ramzat: Rhythmic dhol beats, vibrant twirls, and high-energy Dandiya Raas dancing together until midnight.',
     lyrics:
-      'Raas Ni Ramzat (Garba Night) · Saturday, 21 November 2026 · 8:00 PM IST',
+      'Raas Ni Ramzat (Garba) · Saturday, 21 November 2026 · 8:00 PM IST',
     coverUrl: garbaEventImg,
     audioUrl: song3,
     accent: '#A855F7',
   },
-
-  // --- SUNDAY, 22 NOVEMBER 2026: MAIN WEDDING AT AHMEDABAD VENUE ---
-  {
-    id: 'hasta-melap',
-    title: 'Hasta Melap & Sacred Pheras',
-    gujaratiTitle: 'હસ્ત મેળાપ',
-    dayNumber: 'Day 2',
-    date: 'Sunday, 22 November 2026',
-    dateShort: '22 Nov 2026',
-    time: '11:00 AM IST',
-    timeGujarati: 'સવારે ૧૧:૦૦ કલાકે',
-    hinduDate: 'Samvat 2083 Kartak Sud 13',
-    venue: 'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat 382445',
-    city: 'Ahmedabad',
-    mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
-    dressCode: 'Royal Gujarati Wedding Attire',
-    icon: '💍',
-    description:
-      'The sacred union of hands (Hasta Melap), Kanyadaan, and Saat Pheras around the holy fire uniting Shubham & Kajal as husband and wife.',
-    lyrics:
-      'Hasta Melap & Wedding Ceremony · Sunday, 22 November 2026 · 11:00 AM IST',
-    coverUrl: weddingImg,
-    audioUrl: dinShagnaDa,
-    accent: '#E11D48',
-  },
 ]
+
 

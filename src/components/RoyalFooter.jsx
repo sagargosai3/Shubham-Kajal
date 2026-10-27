@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { Heart, MailOpen } from 'lucide-react'
+import { Heart, MailOpen, Share2 } from 'lucide-react'
 
 /**
  * RoyalFooter — Section 8
@@ -8,6 +7,12 @@ import { Heart, MailOpen } from 'lucide-react'
  * Come, dance, laugh, and celebrate with us in style."
  */
 export default function RoyalFooter({ config, onReplayEnvelope }) {
+  const handleShareWhatsApp = () => {
+    const shareUrl = window.location.origin
+    const shareText = `*॥ श्री गणेशाय नमः ॥*\n\nWith the divine blessings of Shri Ganesh and our families, we joyfully invite you to celebrate the wedding of\n*Chi. Shubham & Chi. Kajal*\n\n📅 *Saturday, 21 November 2026*\n📍 *50, Shreeji Darshan Bungalows, Vadodara*\n\nTap below to open your interactive royal digital invitation card & RSVP:\n👉 ${shareUrl}`
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank')
+  }
+
   return (
     <footer className="w-full bg-gradient-to-b from-[#8E2A2A] via-[#751B1B] to-[#540D0D] text-white pt-12 pb-14 px-6 text-center relative overflow-hidden border-t-2 border-[#C9A24B]/50">
       {/* Subtle gold glow & pattern */}
@@ -41,8 +46,17 @@ export default function RoyalFooter({ config, onReplayEnvelope }) {
           </p>
         </div>
 
-        {/* Replay Envelope Intro Button */}
-        <div className="pt-4">
+        {/* Action Buttons: Share on WhatsApp & Replay Envelope */}
+        <div className="pt-4 flex flex-col items-center gap-2.5">
+          <button
+            type="button"
+            onClick={handleShareWhatsApp}
+            className="w-full max-w-[280px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-bold tracking-wider uppercase transition-transform active:scale-95 shadow-md shadow-green-950/20"
+          >
+            <Share2 className="w-3.5 h-3.5" />
+            <span>Share Invitation on WhatsApp</span>
+          </button>
+
           <button
             type="button"
             onClick={onReplayEnvelope}

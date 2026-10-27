@@ -136,7 +136,7 @@ export default function App() {
               {WEDDING_CONFIG.coupleTitle}
             </span>
             <span className="text-[10px] font-bold text-[#C9A24B] tracking-widest uppercase">
-              22 NOV 2026
+              21 NOV 2026
             </span>
           </header>
 
@@ -168,13 +168,10 @@ export default function App() {
 
             {/* Section 5: The Venue */}
             <div id="venue-section" className="scroll-mt-14">
-              <TheVenueCard
-                venue={WEDDING_CONFIG.venue}
-                venues={WEDDING_CONFIG.venues}
-              />
+              <TheVenueCard venue={WEDDING_CONFIG.venue} />
             </div>
 
-            {/* Section 6: Festivities (6 Events) */}
+            {/* Section 6: Festivities (5 Events) */}
             <div id="festivities-section" className="scroll-mt-14">
               <Festivities events={WEDDING_CONFIG.events} />
             </div>

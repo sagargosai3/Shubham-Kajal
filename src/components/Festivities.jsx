@@ -27,29 +27,26 @@ export default function Festivities({ events }) {
         Join us as we laugh, dance, and create memories for a lifetime
       </p>
 
-      {/* 6 Event Cards */}
-      <div className="space-y-6">
-        {events.map((event) => (
-          <EventCard
-            key={event.id}
-            title={event.title}
-            weekday={event.weekday}
-            day={event.day}
-            month={event.month}
-            year={event.year}
-            time={event.time}
-            illustrationUrl={event.illustrationUrl}
-            quote={event.quote}
-            dressCodeColors={event.dressCodeColors}
-            dressCodeText={event.dressCodeText}
-            venue={event.venue}
-            mapsUrl={event.mapsUrl}
-            theme={event.theme}
-            objectPosition={event.objectPosition}
-            cityTag={event.cityTag}
-          />
-        ))}
-      </div>
+        {/* 5 Auspicious Event Cards */}
+        <div className="space-y-6">
+          {events.map((event) => (
+            <EventCard
+              key={event.id}
+              title={event.title}
+              weekday={event.weekday}
+              day={event.day}
+              month={event.month}
+              year={event.year}
+              time={event.time}
+              illustrationUrl={event.illustrationUrl}
+              quote={event.quote}
+              venue={event.venue}
+              mapsUrl={event.mapsUrl}
+              theme={event.theme}
+              objectPosition={event.objectPosition}
+            />
+          ))}
+        </div>
     </section>
   )
 }

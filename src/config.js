@@ -4,13 +4,14 @@ import coupleRooftopGoldenHour from './assets/images/couple/couple-rooftop-golde
 import coupleLaughingOutdoors from './assets/images/couple/couple-laughing-outdoors.jpeg'
 import coupleSelfieMoments from './assets/images/couple/couple-selfie-moments.jpeg'
 import coupleTraditionalEthnic from './assets/images/couple/couple-traditional-ethnic.jpeg'
+import coupleFairytalePink from './assets/images/couple/couple-fairytale-pink.jpeg'
 
 // Event illustrations & user added ceremony photos
 import ganeshSthapnaImg from './assets/images/events/ganesh-sthapna.avif'
-import haldiEventImg from './assets/images/events/haldi.jpg'
+import mandapMuhuratImg from './assets/images/events/mandap-muhurat.jpeg'
 import mameruEventImg from './assets/images/events/mameru.jpeg'
+import dinnerImg from './assets/images/events/dinner.jpg'
 import garbaEventImg from './assets/images/events/garba.avif'
-import weddingMandapImg from './assets/images/wedding.jpg'
 import familyPhotoImg from './assets/images/family-photo.jpeg'
 
 export const WEDDING_CONFIG = {
@@ -29,61 +30,33 @@ export const WEDDING_CONFIG = {
 
   // Auspicious Invocation
   shloka: '॥ श्री गणेशाय नमः ॥',
-  shlokaSubtext: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥',
+  shlokaSubtext: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषు सर्वदा॥',
   inviteOpening:
     'With the blessings of Shri Ganesh and our beloved families, we joyfully invite you to celebrate the union of',
 
   // Save the Date Scratch Card values
   saveTheDate: {
     month: 'NOV',
-    day: '22',
+    day: '21',
     year: '2026',
-    fullDateText: 'Sunday, 22 November 2026',
+    fullDateText: 'Saturday, 21 November 2026',
     subtext: 'Scratch below to reveal our wedding date',
     revealQuote: 'A lifetime of togetherness begins with one single step',
   },
 
-  // Venue Information (Ahmedabad for Hasta Melap, Vadodara for Pre-Wedding events)
-  venues: {
-    wedding: {
-      id: 'wedding',
-      label: 'Wedding & Hasta Melap',
-      eventNames: 'Hasta Melap & Sacred Pheras',
-      day: 'Sunday, 22 November 2026',
-      name: 'Vishwakarma Baug',
-      tagline: 'Main Wedding Arena (Ahmedabad)',
-      address: 'Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat 382445',
-      city: 'Ahmedabad, Gujarat',
-      mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
-      image: weddingMandapImg,
-      parkingNote: 'Valet parking available at venue',
-      gateNote: 'Mandap open from 10:00 AM',
-    },
-    preWedding: {
-      id: 'pre-wedding',
-      label: 'Pre-Wedding Festivities',
-      eventNames: 'Ganesh Sthapna · Haldi · Mameru · Garba Night',
-      day: 'Saturday, 21 November 2026',
-      name: 'Shreeji Darshan Bungalows',
-      tagline: 'Pre-Wedding Celebrations (Vadodara)',
-      address: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara, Gujarat',
-      city: 'Vadodara, Gujarat',
-      mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
-      image: familyPhotoImg,
-      objectPosition: 'center 15%',
-      parkingNote: 'Designated parking available',
-      gateNote: 'Celebrations commence 8:00 AM',
-    },
-  },
-
-  // Primary Wedding Venue
+  // Celebrations Venue (Vadodara)
   venue: {
-    name: 'Vishwakarma Baug',
-    tagline: 'Main Wedding Arena (Hasta Melap)',
-    address: 'Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad, Gujarat 382445',
-    city: 'Ahmedabad, Gujarat',
-    mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
-    image: weddingMandapImg,
+    name: 'Shreeji Darshan Bungalows',
+    tagline: 'Celebrations Venue (Vadodara)',
+    address: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara, Gujarat',
+    city: 'Vadodara, Gujarat',
+    mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+    image: familyPhotoImg,
+    objectPosition: 'center 15%',
+    parkingNote: 'Designated parking available',
+    gateNote: 'Celebrations commence 8:00 AM',
+    eventNames: 'Ganesh Sthapna · Mandap Muhurat · Mameru · Dinner · Garba',
+    day: 'Saturday, 21 November 2026',
   },
 
   // Audio configuration
@@ -119,10 +92,10 @@ export const WEDDING_CONFIG = {
       title: 'Traditional Grace',
       date: 'Rooted in Love',
       caption: 'Wrapped in festive hues, stepping together into our new forever.',
-      image: coupleTraditionalEthnic,
+      image: coupleFairytalePink,
       rotation: -1.5,
       style: 'polaroid',
-      objectPosition: 'center 0%',
+      objectPosition: 'center 8%',
     },
     {
       id: 'photo-4',
@@ -136,7 +109,7 @@ export const WEDDING_CONFIG = {
     },
   ],
 
-  // 5 Authentic Ceremonies / Events (Mangalik Prasango)
+  // 5 Auspicious Wedding Events
   events: [
     {
       id: 'ganesh-sthapna',
@@ -145,18 +118,11 @@ export const WEDDING_CONFIG = {
       day: '21',
       month: 'Nov',
       year: '2026',
-      time: '8:00 AM onwards',
+      time: '8:00 AM',
       dateTimeDisplay: 'Saturday | 21 | Nov 2026',
       illustrationUrl: ganeshSthapnaImg,
-      quote: 'Invoking the auspicious blessings of Lord Ganesha and Mandap Muhurat to begin our sacred wedding rites.',
-      dressCodeColors: [
-        { name: 'Sacred Yellow', hex: '#F59E0B' },
-        { name: 'Sindoor Red', hex: '#DC2626' },
-        { name: 'Heritage Gold', hex: '#D4AF37' },
-      ],
-      dressCodeText: 'TRADITIONAL ETHNIC & KURTA PAJAMA',
+      quote: 'Invoking the auspicious blessings of Lord Ganesha to begin our sacred wedding rites.',
       venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
-      cityTag: 'Vadodara',
       mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
       theme: {
         bgGradient: 'from-[#380511] via-[#580C1D] to-[#25030B]',
@@ -166,24 +132,17 @@ export const WEDDING_CONFIG = {
       objectPosition: 'center center',
     },
     {
-      id: 'haldi',
-      title: 'Haldi Ceremony',
+      id: 'mandap-muhurat',
+      title: 'Mandap Muhurat',
       weekday: 'Saturday',
       day: '21',
       month: 'Nov',
       year: '2026',
-      time: '10:00 AM onwards',
+      time: '8:00 AM',
       dateTimeDisplay: 'Saturday | 21 | Nov 2026',
-      illustrationUrl: haldiEventImg,
-      quote: 'Splashes of golden turmeric, playful laughter, and heartfelt blessings for the radiant bride and groom.',
-      dressCodeColors: [
-        { name: 'Sunshine Yellow', hex: '#FBBF24' },
-        { name: 'Mustard Gold', hex: '#D97706' },
-        { name: 'Floral Coral', hex: '#FB7185' },
-      ],
-      dressCodeText: 'YELLOW ATTIRE & FLORAL ACCENTS',
+      illustrationUrl: mandapMuhuratImg,
+      quote: 'Sanctification of the sacred wedding mandap to invite divine blessings, harmony, and joy.',
       venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
-      cityTag: 'Vadodara',
       mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
       theme: {
         bgGradient: 'from-[#FFF7ED] via-[#FEF3C7] to-[#FEE2E2]',
@@ -194,23 +153,16 @@ export const WEDDING_CONFIG = {
     },
     {
       id: 'mameru',
-      title: 'Mameru Ceremony',
+      title: 'Mameru',
       weekday: 'Saturday',
       day: '21',
       month: 'Nov',
       year: '2026',
-      time: '2:30 PM onwards',
+      time: '2:30 PM',
       dateTimeDisplay: 'Saturday | 21 | Nov 2026',
       illustrationUrl: mameruEventImg,
       quote: 'Welcoming our beloved maternal family (Visavadiya Parivar) bearing auspicious gifts, traditional attire, and cherished blessings.',
-      dressCodeColors: [
-        { name: 'Royal Magenta', hex: '#BE185D' },
-        { name: 'Emerald Green', hex: '#047857' },
-        { name: 'Antique Gold', hex: '#B45309' },
-      ],
-      dressCodeText: 'TRADITIONAL GUJARATI ETHNIC',
       venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
-      cityTag: 'Vadodara',
       mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
       theme: {
         bgGradient: 'from-[#4A0E2E] via-[#63133D] to-[#2B0418]',
@@ -220,56 +172,42 @@ export const WEDDING_CONFIG = {
       objectPosition: 'center center',
     },
     {
-      id: 'garba',
-      title: 'Garba Night',
+      id: 'dinner',
+      title: 'Dinner',
       weekday: 'Saturday',
       day: '21',
       month: 'Nov',
       year: '2026',
-      time: '8:00 PM onwards',
+      time: '7:00 PM',
+      dateTimeDisplay: 'Saturday | 21 | Nov 2026',
+      illustrationUrl: dinnerImg,
+      quote: 'An exquisite evening banquet with authentic flavors, laughter, and warm celebrations under the lights.',
+      venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
+      mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
+      theme: {
+        bgGradient: 'from-[#1A2E05] via-[#2F4F0B] to-[#122003]',
+        accent: '#A3E635',
+        badge: 'bg-[#2F4F0B] text-lime-200 border-lime-400/30',
+      },
+      objectPosition: 'center center',
+    },
+    {
+      id: 'garba',
+      title: 'Garba',
+      weekday: 'Saturday',
+      day: '21',
+      month: 'Nov',
+      year: '2026',
+      time: '8:00 PM',
       dateTimeDisplay: 'Saturday | 21 | Nov 2026',
       illustrationUrl: garbaEventImg,
       quote: 'Raas Ni Ramzat: Rhythmic dhol beats, vibrant twirls, and high-energy Dandiya Raas dancing together until midnight.',
-      dressCodeColors: [
-        { name: 'Midnight Navy', hex: '#1E1B4B' },
-        { name: 'Mirror Pink', hex: '#DB2777' },
-        { name: 'Bright Gold', hex: '#F59E0B' },
-      ],
-      dressCodeText: 'CHANIYA CHOLI, KEDIYA & INDO-WESTERN',
       venue: '50, Shreeji Darshan Bungalows, besides Galaxy Hospital, Sunpharma Road, Vadodara',
-      cityTag: 'Vadodara',
       mapsUrl: 'https://maps.google.com/?q=50+Shreeji+darshan+bunglows+besides+galaxy+hospital+sunpharma+road+Vadodara',
       theme: {
         bgGradient: 'from-[#1E1B4B] via-[#2E1065] to-[#0F172A]',
         accent: '#FBBF24',
         badge: 'bg-[#2E1065] text-amber-200 border-amber-400/30',
-      },
-      objectPosition: 'center center',
-    },
-    {
-      id: 'hasta-melap',
-      title: 'Hasta Melap & Sacred Pheras',
-      weekday: 'Sunday',
-      day: '22',
-      month: 'Nov',
-      year: '2026',
-      time: '11:00 AM Auspicious Hour',
-      dateTimeDisplay: 'Sunday | 22 | Nov 2026',
-      illustrationUrl: weddingMandapImg,
-      quote: 'The sacred union of hands, Kanyadaan, and the eternal seven pheras around the holy fire uniting Shubham & Kajal as one.',
-      dressCodeColors: [
-        { name: 'Heritage Maroon', hex: '#8E2A2A' },
-        { name: 'Vermilion Red', hex: '#B8302E' },
-        { name: 'Temple Gold', hex: '#C9A24B' },
-      ],
-      dressCodeText: 'ROYAL GUJARATI WEDDING ATTIRE',
-      venue: 'Vishwakarma Baug, Gor No Kuvo, Next to Gayatri Mandir, Jasodanagar, Ahmedabad',
-      cityTag: 'Ahmedabad',
-      mapsUrl: 'https://maps.google.com/?q=Vishwakarma+Baug+Jasodanagar+Ahmedabad',
-      theme: {
-        bgGradient: 'from-[#4A0404] via-[#6B0A1E] to-[#2B0202]',
-        accent: '#F5E6BE',
-        badge: 'bg-[#8E2A2A] text-amber-200 border-amber-400/40',
       },
       objectPosition: 'center center',
     },
