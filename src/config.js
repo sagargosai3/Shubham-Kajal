@@ -37,9 +37,9 @@ export const WEDDING_CONFIG = {
   // Save the Date Scratch Card values
   saveTheDate: {
     month: 'NOV',
-    day: '21',
+    day: '22',
     year: '2026',
-    fullDateText: 'Saturday, 21 November 2026',
+    fullDateText: 'Sunday, 22 November 2026',
     subtext: 'Scratch below to reveal our wedding date',
     revealQuote: 'A lifetime of togetherness begins with one single step',
   },
